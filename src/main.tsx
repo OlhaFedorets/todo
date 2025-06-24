@@ -7,7 +7,7 @@ import { store } from "./app/store"
 
 createRoot(document.getElementById("root")!).render(
   // <BrowserRouter basename={process.env.PUBLIC_URL} >
-  <HashRouter >
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <Provider store={store}>
       <App />
     </Provider>
